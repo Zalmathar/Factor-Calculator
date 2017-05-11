@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Factor Calulator</title>
+    <link rel="stylesheet" href="factor.css">
+    <script src="factor.js"></script>
+</head>
+<body>
+    <form>
+        <input type="text" name="A" id="EquA">x^2
+        <select name="AddOrSubtract" id="AOS1">
+            <option value="+">+</option>
+            <option value="-">-</option>
+        </select>
+        <input type="text" name="B" id="EquB">x
+        <select name="AddOrSubtract" id="AOS2">
+            <option value="+">+</option>
+            <option value="-">-</option>
+        </select>
+        <input type="text" name="C" id="EquC">
+    </form>
+    <button type="button" onclick="Factor()">Factor!</button>
+    <button type="button" onclick="Reset()">Reset</button>
+    <br>
+    <p>Awnser:</p>
+    <input tpye="text" name="Awnser" id="Awnserbox" readonly="readonly">
+    <p style="color: red;">*Warning currently equations only work when A is set to 1, this means that any equations with A not 1 will not factor correctly</p>
+</body>
+</html>
